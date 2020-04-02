@@ -1,7 +1,7 @@
 require 'rack'
 
 # Something that responds to call, that's what Rack demands
-class MyServer
+class Application
   def call(env)
     return [ 200, {'Content-Type' => 'text/html'}, pretty_response ]
   end
